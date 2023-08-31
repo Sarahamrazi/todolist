@@ -1,0 +1,119 @@
+.App {
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 20px;
+ padding: 10px;
+
+}
+
+.App h1 {
+  margin-bottom: 30px;
+}
+
+.container{
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px; 
+}
+.todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  margin: 10px;
+}
+.completed{
+  text-decoration: line-through;
+  color: rgb(121, 121, 121);
+}
+
+input{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 3px;
+  outline: none;
+  width: 200px;
+}
+input:focus{
+  border: 2px solid blueviolet;
+}
+
+.formControl{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 20rem;
+}
+
+.btn{
+  color: #6D28D9;
+  background-color: #fff;
+  border: 1px solid #6D28D9;
+  padding: 5px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.remove{
+  color: rgb(236 , 68 , 68);
+  border: 1px solid rgb(236 , 68 , 68);
+}
+
+.addTodo{
+  color: #fff;
+  background-color: #6D28D9;
+}
+
+.updateTodo{
+  background-color: #a884e2;
+  color: #fff;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+header span{
+  margin-right: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  background-color: #d0c7f7;
+  color: #6D28D9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width : 768px) {
+  .App{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    width: 95%;
+  }
+  .container form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
